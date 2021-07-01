@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B90BA96-6EE8-4029-8859-A99B4E2BCFB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PartyBuildingManagement</RootNamespace>
+    <AssemblyName>PartyBuildingManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin1.Designer.cs">
+      <DependentUpon>Admin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin12StudentMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin12StudentMan.Designer.cs">
+      <DependentUpon>Admin12StudentMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin13StudentMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin13StudentMan.Designer.cs">
+      <DependentUpon>Admin13StudentMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin1StudentMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin1StudentMan.Designer.cs">
+      <DependentUpon>Admin1StudentMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin21MissionMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin21MissionMan.Designer.cs">
+      <DependentUpon>Admin21MissionMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin22MissionMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin22MissionMan.Designer.cs">
+      <DependentUpon>Admin22MissionMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin2MissionMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin2MissionMan.Designer.cs">
+      <DependentUpon>Admin2MissionMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin3complete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin3complete.Designer.cs">
+      <DependentUpon>Admin3complete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaoClass.cs" />
+    <Compile Include="DataClass.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User1.Designer.cs">
+      <DependentUpon>User1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User12UpdatePs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User12UpdatePs.Designer.cs">
+      <DependentUpon>User12UpdatePs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User1UpdateMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User1UpdateMessage.Designer.cs">
+      <DependentUpon>User1UpdateMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User22Comptele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User22Comptele.Designer.cs">
+      <DependentUpon>User22Comptele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User2check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User2check.Designer.cs">
+      <DependentUpon>User2check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User2CheckMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User2CheckMission.Designer.cs">
+      <DependentUpon>User2CheckMission.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin1.resx">
+      <DependentUpon>Admin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin12StudentMan.resx">
+      <DependentUpon>Admin12StudentMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin13StudentMan.resx">
+      <DependentUpon>Admin13StudentMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin1StudentMan.resx">
+      <DependentUpon>Admin1StudentMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin21MissionMan.resx">
+      <DependentUpon>Admin21MissionMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin22MissionMan.resx">
+      <DependentUpon>Admin22MissionMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin2MissionMan.resx">
+      <DependentUpon>Admin2MissionMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin3complete.resx">
+      <DependentUpon>Admin3complete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="User1.resx">
+      <DependentUpon>User1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User12UpdatePs.resx">
+      <DependentUpon>User12UpdatePs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User1UpdateMessage.resx">
+      <DependentUpon>User1UpdateMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User22Comptele.resx">
+      <DependentUpon>User22Comptele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User2check.resx">
+      <DependentUpon>User2check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User2CheckMission.resx">
+      <DependentUpon>User2CheckMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
